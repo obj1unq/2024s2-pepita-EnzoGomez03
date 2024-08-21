@@ -31,7 +31,7 @@ object manzana {
 	method madurez(_madurez) {
 		madurez = _madurez
 	}
-	
+	//Quiero agregar esto.
 	method madurar() {
 		self.madurez(madurez + 1)
 	}
@@ -40,4 +40,8 @@ object manzana {
 		return base * madurez
 	}
 	
+}
+
+object pepon {
+  
 }
