@@ -64,6 +64,7 @@ method volar(distancia){
 object roque {
   
   var ave = pepita
+  var totalCenas = 0
 
   method aveActual(){
 	return ave
@@ -72,5 +73,13 @@ object roque {
   method cambiarAve(aveNueva){
 	ave = aveNueva
   }
-  
+
+  method alimentarAve(comida){
+	ave.comer(comida)
+	totalCenas += 1
+  }
+
+  method cenas(){
+	return totalCenas
+  } 
 }
