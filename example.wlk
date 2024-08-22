@@ -44,4 +44,33 @@ object manzana {
 
 object pepon {
   
+  var energia = 30
+  const gastoAlVolar = 20
+
+method energiaActual(){
+	return energia
+}
+
+method comer(comida){
+	energia = energia + (comida.energiaQueAporta()/2)
+}
+
+method volar(distancia){
+	energia = energia - gastoAlVolar-(distancia*2)
+}
+
+}
+
+object roque {
+  
+  var ave = pepita
+
+  method aveActual(){
+	return ave
+  }
+
+  method cambiarAve(aveNueva){
+	ave = aveNueva
+  }
+  
 }
