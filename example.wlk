@@ -31,7 +31,7 @@ object manzana {
 	method madurez(_madurez) {
 		madurez = _madurez
 	}
-	
+	//Quiero agregar esto.
 	method madurar() {
 		self.madurez(madurez + 1)
 	}
@@ -40,4 +40,46 @@ object manzana {
 		return base * madurez
 	}
 	
+}
+
+object pepon {
+  
+  var energia = 30
+  const gastoAlVolar = 20
+
+method energiaActual(){
+	return energia
+}
+
+method comer(comida){
+	energia = energia + (comida.energiaQueAporta()/2)
+}
+
+method volar(distancia){
+	energia = energia - gastoAlVolar-(distancia*2)
+}
+
+}
+
+object roque {
+  
+  var ave = pepita
+  var totalCenas = 0
+
+  method aveActual(){
+	return ave
+  }
+
+  method cambiarAve(aveNueva){
+	ave = aveNueva
+  }
+
+  method alimentarAve(comida){
+	ave.comer(comida)
+	totalCenas += 1
+  }
+
+  method cenas(){
+	return totalCenas
+  } 
 }
